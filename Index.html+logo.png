@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACFYD - Alkalari Community Foundation For Youth Development</title>
+<style>
+  :root{
+    --green: #004d00;
+    --gold: #D4AF37;
+    --white: #ffffff;
+    --light: #f4f9f4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;font-family: 'Segoe UI', Arial, sans-serif;}
+  body{background: var(--light); color:#333; scroll-behavior:smooth;}
+
+  header{background: linear-gradient(135deg, var(--green), #003300); color:var(--white); padding:30px 20px; text-align:center;}
+  header img{width:90px; height:90px; border-radius:50%; background:var(--white); padding:6px; border:3px solid var(--gold);}
+  header h1{margin-top:12px; font-size:22px;}
+  header p{color:var(--gold); font-weight:bold;}
+
+  nav{background: var(--gold); display:flex; justify-content:center; flex-wrap:wrap; position:sticky; top:0; z-index:100;}
+  nav a{color:#000; padding:14px 18px; text-decoration:none; font-weight:bold;}
+  nav a:hover{background:#000; color:var(--white);}
+
+ .container{max-width:1100px; margin:auto; padding:30px 20px;}
+ .section{background:var(--white); padding:30px; margin-bottom:25px; border-radius:12px; box-shadow:0 3px 8px rgba(0,0,0,0.08);}
+ .section h2{color:var(--green); margin-bottom:15px; border-left:6px solid var(--gold); padding-left:12px;}
+
+ .grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:20px;}
+ .card{background:var(--light); padding:20px; border-radius:10px; border-top:4px solid var(--gold);}
+
+ .btn{background:var(--green); color:var(--white); padding:12px 22px; border:none; border-radius:6px; cursor:pointer; text-decoration:none; display:inline-block; margin-top:10px; font-weight:bold;}
+ .btn:hover{background:#003300;}
+ .btn-gold{background:var(--gold); color:#000;}
+ .btn-gold:hover{background:#c19b2f;}
+
+  /* FORM */
+  form{display:grid; gap:14px;}
+  input, select, textarea{padding:11px; border:1px solid #ccc; border-radius:6px; width:100%; font-size:15px;}
+  label{font-weight:bold; color:var(--green);}
+
+  /* ID CARD */
+ .id-card{width:350px; height:220px; background:linear-gradient(135deg, #e8f5e9, #fff); border:3px solid var(--green); border-radius:12px; padding:12px; position:relative; margin:auto; box-shadow:0 4px 12px rgba(0,0,0,0.15);}
+ .id-header{background:var(--green); color:var(--white); text-align:center; padding:6px; border-radius:6px; font-size:12px; font-weight:bold;}
+ .id-body{display:flex; gap:10px; margin-top:8px;}
+ .id-photo{width:80px; height:80px; border-radius:8px; border:2px solid var(--gold); object-fit:cover;}
+ .id-info{flex:1; font-size:12px;}
+ .id-info h3{color:var(--green); font-size:14px; margin-bottom:4px;}
+ .id-info p{margin:2px 0;}
+ .id-footer{position:absolute; bottom:8px; left:0; right:0; text-align:center; font-size:10px; color:var(--green); font-weight:bold;}
+ .id-logo{position:absolute; top:10px; right:10px; width:35px; height:35px; border-radius:50%;}
+
+ .hidden{display:none;}
+  footer{background:var(--green); color:var(--white); text-align:center; padding:20px; margin-top:30px;}
+  @media print{.no-print{display:none} body{background:white}}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="ACFYD Logo">
+  <h1>Alkalari Community Foundation For Youth Development</h1>
+  <p>One People. One Purpose. One Future.</p>
+</header>
+
+<nav class="no-print">
+  <a href="#about">About</a>
+  <a href="#mission">Mission</a>
+  <a href="#activities">Activities</a>
+  <a href="#leadership">Leadership</a>
+  <a href="#register">Join Us</a>
+  <a href="#idcard">ID Card</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+  <div class="section" id="about">
+    <h2>About ACFYD</h2>
+    <p>Alkalari Community Foundation For Youth Development ACFYD is dedicated to nurturing, educating, and empowering young people to become leaders who drive inclusive community development and sustainable growth.</p>
+  </div>
+
+  <div class="section" id="mission">
+    <h2>Mission, Vision & Motto</h2>
+    <div class="grid">
+      <div class="card"><h3>Mission</h3><p>To nurture, educate, and empower young people to become leaders who drive inclusive community development and sustainable growth.</p></div>
+      <div class="card"><h3>Vision</h3><p>A united society where empowered youth transform communities and build a brighter collective future.</p></div>
+      <div class="card"><h3>Motto</h3><p style="color:var(--gold); font-weight:bold; font-size:18px;">One People. One Purpose. One Future.</p></div>
+    </div>
+  </div>
+
+  <div class="section" id="activities">
+    <h2>Our Key Activities</h2>
+    <div class="grid">
+      <div class="card"><h3>Livelihood & Community Foundation</h3><p>Skills acquisition, entrepreneurship training, and support for youth-led community projects.</p></div>
+      <div class="card"><h3>Hygiene</h3><p>WASH campaigns, community sensitization, and hygiene material distribution for healthy living.</p></div>
+      <div class="card"><h3>Nutrition</h3><p>Nutrition education, feeding programs for vulnerable youth, and advocacy for food security.</p></div>
+      <div class="card"><h3>Leadership & Education</h3><p>Mentorship, leadership training, scholarships, and civic engagement programs.</p></div>
+    </div>
+  </div>
+
+  <div class="section" id="leadership">
+    <h2>Leadership</h2>
+    <div class="grid">
+      <div class="card"><h3>President</h3><p>[Add Name Here]</p></div>
+      <div class="card"><h3>Vice President</h3><p>[Add Name Here]</p></div>
+      <div class="card"><h3>General Secretary</h3><p>[Add Name Here]</p></div>
+      <div class="card"><h3>Program Coordinator</h3><p>[Add Name Here]</p></div>
+    </div>
+  </div>
+
+  <div class="section" id="register">
+    <h2>New Membership Registration + ID Card Generator</h2>
+    <p>Fill the form below and your Membership ID Card will be generated instantly.</p>
+    <form id="regForm" class="no-print">
+      <label>Full Name</label>
+      <input type="text" id="fullname" required>
+
+      <label>Upload Passport Photo</label>
+      <input type="file" id="photo" accept="image/*">
+
+      <label>Gender</label>
+      <select id="gender" required><option value="">Select</option><option>Male</option><option>Female</option></select>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" required>
+
+      <label>Position/Role</label>
+      <input type="text" id="position" placeholder="e.g. Youth Member" required>
+
+      <label>Residential Address</label>
+      <textarea id="address" rows="2" required></textarea>
+
+      <button type="submit" class="btn">Generate My ID Card</button>
+    </form>
+
+    <div id="idcard" class="hidden">
+      <h3 style="text-align:center; color:var(--green); margin:20px 0;">Your ACFYD Membership ID Card</h3>
+      <div class="id-card" id="printArea">
+        <div class="id-header">ALAKALARI COMMUNITY FOUNDATION FOR YOUTH DEVELOPMENT</div>
+        <img src="logo.png" class="id-logo">
+        <div class="id-body">
+          <img src="logo.png" id="idPhoto" class="id-photo">
+          <div class="id-info">
+            <h3 id="idName">FULL NAME</h3>
+            <p><b>ID No:</b> <span id="idNo">ACFYD-0001</span></p>
+            <p><b>Gender:</b> <span id="idGender"></span></p>
+            <p><b>Phone:</b> <span id="idPhone"></span></p>
+            <p><b>Position:</b> <span id="idPosition"></span></p>
+            <p><b>Date Issued:</b> <span id="idDate"></span></p>
+          </div>
+        </div>
+        <div class="id-footer">One People. One Purpose. One Future.</div>
+      </div>
+      <div style="text-align:center; margin-top:15px;">
+        <button onclick="window.print()" class="btn">Print ID Card</button>
+        <button onclick="resetForm()" class="btn btn-gold">Register Another Member</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Email:</b> alkalaricommunityfoundationfor@gmail.com</p>
+    <p><b>Address:</b> Alkalari Community, Damboa LGA, Borno State, Nigeria.</p>
+    <p><b>Motto:</b> Together for a Better Alkalari.</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Alkalari Community Foundation For Youth Development. All Rights Reserved.</p>
+</footer>
+
+<script>
+  let memberCount = 1; // ID counter. Change to continue from last number
+
+  document.getElementById('regForm').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    // Get values
+    const name = document.getElementById('fullname').value;
+    const gender = document.getElementById('gender').value;
+    const phone = document.getElementById('phone').value;
+    const position = document.getElementById('position').value;
+    const photo = document.getElementById('photo').files[0];
+
+    // Set values to ID
+    document.getElementById('idName').innerText = name.toUpperCase();
+    document.getElementById('idGender').innerText = gender;
+    document.getElementById('idPhone').innerText = phone;
+    document.getElementById('idPosition').innerText = position;
+    document.getElementById('idNo').innerText = 'ACFYD-' + new Date().getFullYear() + '-' + String(memberCount).padStart(4,'0');
+    document.getElementById('idDate').innerText = new Date().toLocaleDateString();
+
+    // Show photo
+    if(photo){
+      const reader = new FileReader();
+      reader.onload = function(e){
+        document.getElementById('idPhoto').src = e.target.result;
+      }
+      reader.readAsDataURL(photo);
+    }
+
+    // Show ID and hide form
+    document.getElementById('regForm').classList.add('hidden');
+    document.getElementById('idcard').classList.remove('hidden');
+    memberCount++;
+  });
+
+  function resetForm(){
+    document.getElementById('regForm').reset();
+    document.getElementById('regForm').classList.remove('hidden');
+    document.getElementById('idcard').classList.add('hidden');
+  }
+</script>
+
+</body>
+</html>
